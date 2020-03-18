@@ -65,22 +65,4 @@ else:
 	print("You did not guess right after 6 times")
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
 
