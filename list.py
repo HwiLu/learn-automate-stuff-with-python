@@ -98,3 +98,56 @@ eggs[0]
 <class 'tuple'>
 >>> type(('hello'))
 <class 'str'>
+
+# 类型转换
+'''
+可用list()和tuple函数进行相应的类型转换
+'''
+
+
+# 引用
+
+'''
+列表的赋值只是将列表的引用赋给了变量。 对于可变数据类型的值，例如列表和字典，
+Python的变量只会保持其引用，对于不可变数据类型，比如字符串、整型和元组，Python变量就保存其本身。
+'''
+# 传递引用
+
+#copy模块
+'''
+如果需要对一个变量中的列表修改，同时不修改原来的列表，就可以用copy()和deepcopy()函数。deepcopy()函数将
+同时复制他们内部的列表。
+
+'''
+
+# 实践项目
+
+#4.10.1 
+def list2str(alist):
+    print(alist)
+    a = alist.pop()
+    a = 'and  ' + a
+    alist.append(a)
+    b = ', '.join(alist)
+    print(b)
+    return(b)    # print改成return就可以返回结果
+
+a = ['cat', 'dog', 'cow']
+list2str(a)
+
+'''
+思路
+先把列表最后一个
+元素pop出来，并与and进行相加，再使用join方法将其拼接
+''' 
+
+
+
+
+
+
+
+
+
+
+
