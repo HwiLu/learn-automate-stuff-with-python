@@ -32,16 +32,16 @@ continue
 '''
 for range()
 '''
-for i in range(5)
+for i in range(5):
     pass
 
 
 '''range()开始、停止和步长'''
-for i in range(0,20,2)
+for i in range(0,20,2):
 
 '''导入模块'''
 import random
-for i in range(5)
+for i in range(5):
     print(random.randint(1,10))
 
 '''sys.exit()提前结束程序'''
