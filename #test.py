@@ -1,13 +1,8 @@
-tableData = [['apples', 'oranges', 'cherries', 'banana'],
-             ['Alice', 'Bob', 'Carol', 'David'],
-             ['dogs', 'cats', 'moose', 'goose']]
-def printTable(aList):
-    for i in range(0,len(aList[0])):
-        #print(i)
-        for j in range(0,len(aList)):
-            #max=len(aList[i][j])
-            print(aList[j][i].rjust(10),end=' ')
-        print() # 换行
+import re
+phoneNumRegex = re.compile(r'\d{3}-\d{3}-\d{4}') 
 
+mo = phoneNumRegex.search('My number is 415-555-4242.')
 
-printTable(tableData)
+print(mo)
+
+print(mo.group())
